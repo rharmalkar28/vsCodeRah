@@ -1,0 +1,1 @@
+find . -print -depth +1 | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
