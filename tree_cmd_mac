@@ -1,1 +1,1 @@
-find . -print -depth +1 | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
+find .  -depth +1 -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
